@@ -17,8 +17,8 @@
 				<td><%=link_to book.title, book_path(book.id) %></td>
 				<td><%=link_to book.body, book_path(book.id) %></td>
 				<td><%=link_to "show", book_path(book.id) %></td>
-				<!-- <th>Title</th>
-				<th>Boby</th> -->
+				<td><%=link_to "edit", edit_book_path(book.id) %></td>
+				<td><%=link_to "delete", book_path(book.id),method: :delete %></td>
 			</tr>
 		<% end %>
 	</tbody>

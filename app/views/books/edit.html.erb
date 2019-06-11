@@ -8,4 +8,6 @@
 	<%= f.text_field :body %>
 	<%= f.submit 'Update Book' %>
 	<% end %>
+<%=link_to "show", book_path(@book.id) %>
+<a calss="back" href="/books">Back</a>
 </body>
