@@ -5,10 +5,16 @@
 <h1>Books</h1>
 <p>タイトル</p>
 <% @books.each do |book| %>
-<span>
-	<%=link_to book.title, book_path(book.id) %>
-	<%=link_to book.body, book_path(book.id) %>
-	</span>
+<table>
+	<thead>
+		<tr>
+			<%=link_to book.title, book_path(book.id) %>
+			<%=link_to book.body, book_path(book.id) %>
+			<th>Title</th>
+			<th>Boby</th>
+		</tr>
+	</thead>
+</table>
 <% end %>
 	<!-- <table>
 		<thead>
