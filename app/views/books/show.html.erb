@@ -1,7 +1,9 @@
+ <% if flash[:notice] %>
+      <div class="flash">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
 
-<head>
-    <title>WebCampBackendNew</title>
-</head>
 <body>
   	<strong>Title:</strong>
   		<p> <%= @book.title %></p>
