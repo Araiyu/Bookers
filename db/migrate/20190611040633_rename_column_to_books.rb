@@ -4,3 +4,4 @@ class RenameColumnToBooks < ActiveRecord::Migration[5.2]
   		rename_column :books, :Body, :body
   end
 end
+
